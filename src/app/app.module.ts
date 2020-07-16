@@ -5,8 +5,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { RegisterComponent } from './auth/register/register.component';
-import { LoginComponent } from './auth/login/login.component';
+
 
 // firebase
 import { AngularFireModule } from '@angular/fire';
@@ -26,16 +25,18 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { AuthModule } from './auth/auth.module';
 import { DashboardModule } from './dashboard/dashboard.module';
 
+//Material 
+
 
 @NgModule({
   declarations: [
-    AppComponent,
-    RegisterComponent,
-    LoginComponent,
+    AppComponent,    
     DashboardComponent
   ],
   imports: [
     BrowserModule,
+    AuthModule,
+    DashboardModule,
     AppRoutingModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
