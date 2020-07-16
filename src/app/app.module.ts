@@ -6,7 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-
 // firebase
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
@@ -25,6 +24,9 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { AuthModule } from './auth/auth.module';
 import { DashboardModule } from './dashboard/dashboard.module';
 
+//Google Maps
+import { AgmCoreModule } from '@agm/core';
+
 //Material 
 
 
@@ -40,6 +42,9 @@ import { DashboardModule } from './dashboard/dashboard.module';
     AppRoutingModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
+    AgmCoreModule.forRoot({
+      apiKey: environment.firebase.apiKey
+   }),
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AngularFireAuthModule,
