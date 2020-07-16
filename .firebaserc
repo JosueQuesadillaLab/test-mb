@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "music-band-8f1d7": {
+      "hosting": {
+        "test-mb": [
+          "music-band-8f1d7"
+        ]
+      }
+    }
+  }
+}
