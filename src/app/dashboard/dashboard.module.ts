@@ -5,32 +5,30 @@ import { RouterModule } from '@angular/router';
 
 import { ReactiveFormsModule } from '@angular/forms';
 
-// import { IngresoegresoComponent } from './ingresoegreso/ingresoegreso.component';
-// import { DetailComponent } from './detail/detail.component';
-// import { StatisticsComponent } from './statistics/statistics.component';
-// import { PerfilComponent } from './perfil/perfil.component';
-// import { NavbarComponent } from './../shared/navbar/navbar.component';
+import { MusicplayerComponent } from './musicplayer/musicplayer.component';
+import { GeolocationComponent } from './geolocation/geolocation.component';
+import { NavbarComponent } from '../shared/navbar/navbar.component';
 
+import { AgmCoreModule } from '@agm/core';
+import { MaterialModule } from '../material.module';
 
 @NgModule({
   declarations: [
-    // NavbarComponent,
-    // PerfilComponent,
-    // StatisticsComponent,
-    // IngresoegresoComponent,
-    // DetailComponent,
+  MusicplayerComponent,
+  GeolocationComponent,
+  NavbarComponent
   ],
   imports: [
     CommonModule,
     RouterModule,
     ReactiveFormsModule,
+    AgmCoreModule,
+    MaterialModule
   ],
   exports: [
-    // NavbarComponent,
-    // PerfilComponent,
-    // StatisticsComponent,
-    // IngresoegresoComponent,
-    // DetailComponent
+    MusicplayerComponent,
+    GeolocationComponent,
+    NavbarComponent
   ]
 })
 export class DashboardModule { }
