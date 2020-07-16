@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.scss']
 })
+
 export class DashboardComponent implements OnInit {
 
   constructor(
@@ -14,7 +15,25 @@ export class DashboardComponent implements OnInit {
     public router: Router
   ) { }
 
+  title: string = 'AGM project';
+  lat: number;
+  lng: number;
+  zoom:number;
+
   ngOnInit() {
+    
+  }
+
+  // Get Current Location Coordinates
+  setCurrentLocation() {
+    if ('geolocation' in navigator) {
+      navigator.geolocation.getCurrentPosition((position) => {
+        this.lat = position.coords.latitude;
+        this.lng = position.coords.longitude;
+        this.zoom = 18;
+        console.log(this.lat, this.lng , this.zoom);
+      });
+    }
   }
 
   logOut(){
