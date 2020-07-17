@@ -1,1 +1,64 @@
-<p>Player</p>
+<div class="grid grid-cols-1 lg:grid-cols-2">
+    <div class="panelPlayer">
+        <div class="grid grid-cols-3 gap-4 pt-8 md:pt-16">
+            <div class="col-span-1">                
+            </div>
+            <div class="col-span-1 text-center">
+                <span class="text-base md:text-3xl font-bold text-white tracking-widest">Album</span>
+            </div>
+            <div class="col-span-1 text-right pr-8">                
+                <mat-icon class="mr-4">favorite_border</mat-icon>
+                <mat-icon class="mr-2">more_vert</mat-icon>                
+            </div>
+             <div class="col-span-3 flex justify-center pt-12">
+                <div class="h-64 w-64 rounded-full overflow-hidden">
+                    <img src="../../assets/5.jpg" alt="" >
+                </div>                
+            </div>
+            <div class="col-span-3">
+                <h3 class="text-base md:text-5xl font-medium text-white text-center ">Janelle Monáe</h3>
+                <h4 class="text-base md:text-2xl font-medium text-white text-center tracking-widest">Walk Off - 2016</h4>
+            </div>    
+
+            <div class="col-span-3">
+                <div class="grid grid-cols-3 pt-4 pb-6">
+                    <div class="text-right">
+                        <mat-icon class="mr-2 text-6xl">skip_previous</mat-icon>
+                    </div>
+                    <div class="text-center">
+                        <mat-icon  *ngIf="statusPlay" (click)="play()" class="mr-2 text-6xl">play_circle_filled</mat-icon>
+                        <mat-icon  *ngIf="!statusPlay" (click)="pause()" class="mr-2 text-6xl">pause_circle_filled</mat-icon>
+                    </div>
+                    <div class="text-left">
+                        <mat-icon class="mr-2 text-6xl">skip_next</mat-icon>
+                    </div>
+                </div>                
+            </div> 
+            
+            <div class="col-span-3 md:px-24 lg:px-40">
+                <div class="grid grid-cols-3 pt-4 pb-6">
+                    <div class="text-left col-span-2 pl-8">
+                        <p class="text-white text-2xl font-bold">I Like that</p>
+                        <p class="text-white text-xs font-normal">Forever Ligth</p>
+                    </div>
+                    <div class="flex justify-end col-span-1">
+                        <mat-icon class="mr-2 text-2xl">more_horiz</mat-icon>
+                    </div>                    
+                </div>  
+                <div class="grid grid-cols-3 pt-4 pb-6">
+                    <div class="text-left col-span-2 pl-8">
+                        <p class="text-blue-600 text-2xl font-bold">In Underflow</p>
+                        <p class="text-white text-xs font-normal">Forever Ligth</p>
+                    </div>
+                    <div class="flex justify-end col-span-1">
+                        <mat-icon class="mr-2 text-2xl">more_horiz</mat-icon>
+                    </div>                    
+                </div>                   
+            </div> 
+            
+        </div>
+    </div>
+    <div class="hidden lg:block">
+        <img src="../../assets/5.jpg" alt="">
+    </div>
+</div>

@@ -29,7 +29,8 @@ import { AgmCoreModule } from '@agm/core';
 
 //Material 
 import { MatSliderModule } from '@angular/material/slider';
-
+import {MatChipsModule} from '@angular/material/chips';
+import {MatInputModule} from '@angular/material/input'; 
 
 @NgModule({
   declarations: [
@@ -54,7 +55,11 @@ import { MatSliderModule } from '@angular/material/slider';
       maxAge: 25, // Retains last 25 states
       logOnly: environment.production, // Restrict extension to log-only mode
     }),
-    MatSliderModule
+
+
+    MatSliderModule,
+    MatChipsModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

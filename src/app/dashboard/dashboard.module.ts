@@ -10,7 +10,8 @@ import { GeolocationComponent } from './geolocation/geolocation.component';
 import { NavbarComponent } from '../shared/navbar/navbar.component';
 
 import { AgmCoreModule } from '@agm/core';
-// import { MaterialModule } from '../material.module';
+import {MatToolbarModule} from '@angular/material/toolbar'; 
+import {MatIconModule} from '@angular/material/icon'; 
 
 @NgModule({
   declarations: [
@@ -23,12 +24,13 @@ import { AgmCoreModule } from '@agm/core';
     RouterModule,
     ReactiveFormsModule,
     AgmCoreModule,
-    // MaterialModule,
+    MatToolbarModule,
+    MatIconModule
   ],
   exports: [
     MusicplayerComponent,
     GeolocationComponent,
-    NavbarComponent,    
+    NavbarComponent   
   ]
 })
 export class DashboardModule { }
