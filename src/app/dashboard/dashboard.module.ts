@@ -10,7 +10,7 @@ import { GeolocationComponent } from './geolocation/geolocation.component';
 import { NavbarComponent } from '../shared/navbar/navbar.component';
 
 import { AgmCoreModule } from '@agm/core';
-import { MaterialModule } from '../material.module';
+// import { MaterialModule } from '../material.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +23,7 @@ import { MaterialModule } from '../material.module';
     RouterModule,
     ReactiveFormsModule,
     AgmCoreModule,
-    MaterialModule,
+    // MaterialModule,
   ],
   exports: [
     MusicplayerComponent,
