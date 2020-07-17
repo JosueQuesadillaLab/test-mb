@@ -16,19 +16,19 @@ import { MaterialModule } from '../material.module';
   declarations: [
   MusicplayerComponent,
   GeolocationComponent,
-  NavbarComponent
+  NavbarComponent,
   ],
   imports: [
     CommonModule,
     RouterModule,
     ReactiveFormsModule,
     AgmCoreModule,
-    MaterialModule
+    MaterialModule,
   ],
   exports: [
     MusicplayerComponent,
     GeolocationComponent,
-    NavbarComponent
+    NavbarComponent,    
   ]
 })
 export class DashboardModule { }
