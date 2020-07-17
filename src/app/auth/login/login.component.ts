@@ -9,6 +9,8 @@ import * as actions from '../../store/actions';
 
 import { Subscription } from 'rxjs';
 
+import Swal from 'sweetalert2';
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -58,7 +60,12 @@ export class LoginComponent implements OnInit , OnDestroy {
     })
     .catch( err => {
       this.store.dispatch( actions.stopLoading());
-      console.log(err)
+      Swal.fire({
+        title: 'Error!',
+        text: err.message,
+        icon: 'error',
+        confirmButtonText: 'Cool'
+      })
     });
 
   }

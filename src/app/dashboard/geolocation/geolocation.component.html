@@ -1,4 +1,11 @@
-<button mat-button color="primary" (click)="setCurrentLocation()" >Cargar Ubicación</button>
+
 <agm-map [latitude]="lat" [zoom]="zoom" [longitude]="lng">
     <agm-marker  [latitude]="lat" [longitude]="lng"></agm-marker>
 </agm-map>
+
+
+<div class="flex justify-center bg-gray-200">
+    <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">
+        <button mat-button color="primary" (click)="setCurrentLocation()" >Cargar Ubicación</button>
+    </div>    
+</div>
