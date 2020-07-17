@@ -130,5 +130,8 @@
       }
     }
   },
-  "defaultProject": "test-mb"
+  "defaultProject": "test-mb",
+  "cli": {
+    "analytics": false
+  }
 }

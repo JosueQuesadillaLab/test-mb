@@ -28,7 +28,7 @@ import { DashboardModule } from './dashboard/dashboard.module';
 import { AgmCoreModule } from '@agm/core';
 
 //Material 
-import { MaterialModule } from './material.module';
+import { MatSliderModule } from '@angular/material/slider';
 
 
 @NgModule({
@@ -54,7 +54,7 @@ import { MaterialModule } from './material.module';
       maxAge: 25, // Retains last 25 states
       logOnly: environment.production, // Restrict extension to log-only mode
     }),
-    MaterialModule
+    MatSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
