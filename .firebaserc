@@ -2,7 +2,7 @@
   "targets": {
     "music-band-8f1d7": {
       "hosting": {
-        "test-mb": [
+        "music-battle": [
           "music-band-8f1d7"
         ]
       }
