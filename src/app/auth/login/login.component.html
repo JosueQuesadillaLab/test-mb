@@ -18,10 +18,7 @@
                 <input type="password" matInput placeholder="*****" formControlName="password">
               </mat-form-field>
 
-            </div>
-            <div class="mb-6">
-                <a [routerLink]="['/register']" class="text-sm text-blue-600 font-normal py4">Ir al registro</a>
-            </div>
+            </div>            
             <div class="flex items-center justify-between">
               <button *ngIf="!cargando"  mat-button type="submit" [disabled]="!loginForm.valid"  class="bg-blue-600 text-white">
                 Sign In
@@ -30,6 +27,7 @@
                 Wait
                 <i class="fa fa-spin fa-sync"></i>
               </button>
+              <a [routerLink]="['/register']" class="text-sm text-blue-600 font-bold py4">Ir al registro</a>
             </div>
         </form>
 
