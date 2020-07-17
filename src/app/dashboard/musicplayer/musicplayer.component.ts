@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild , ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-musicplayer',
@@ -7,24 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MusicplayerComponent implements OnInit {
 
-  constructor() { }
-
-  files: Array<any> = [
-    { name: "First Song", artist: "Inder" },
-    { name: "Second Song", artist: "You" }
-  ];
-  state;
-  currentFile: any = {};
-
   ngOnInit() {
   }
 
-  isFirstPlaying() {
-    return false;
-  }
-  isLastPlaying() {
-    return true;
-  }
 
 }
  
